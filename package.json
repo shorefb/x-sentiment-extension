@@ -1,0 +1,13 @@
+{
+  "name": "x-sentiment-extension",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^13.0.0",
+    "sentiment": "^5.0.2",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}

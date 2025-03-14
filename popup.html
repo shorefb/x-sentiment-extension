@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>X Sentiment Analyzer</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+      font-family: Arial;
+      text-align: center;
+    }
+    button {
+      width: 100%;
+      padding: 5px;
+      margin: 5px 0;
+    }
+    #stats {
+      font-size: 12px;
+      margin: 5px 0;
+    }
+    #sentiment-gauge {
+      position: relative;
+      width: 180px;
+      height: 90px;
+      margin: 10px auto;
+      background-image: url('gauge-bg.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #needle {
+      position: absolute;
+      width: 2px;
+      height: 70px;
+      background: black;
+      bottom: 0;
+      left: 50%;
+      transform-origin: bottom center;
+      transition: transform 0.5s ease;
+    }
+    #gauge-label {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 5px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle emphasis */
+      transition: color 0.5s ease; /* Smooth color transition */
+      background: rgba(0, 0, 0, 0.05); padding: 2px 8px; border-radius: 3px;
+    }
+    #meter-label {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h3>X Sentiment Analyzer</h3>
+  <button id="toggle">Toggle On/Off</button>
+  <button id="reset">Reset Data</button>
+  <div id="stats"></div>
+  <div id="sentiment-gauge">
+    <div id="needle"></div>
+  </div>
+  <span id="gauge-label"></span>
+  <div id="meter-label">Overall Sentiment</div>
+  <script src="popup.js"></script>
+</body>
+</html>

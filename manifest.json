@@ -3,7 +3,7 @@
   "name": "X Sentiment Analyzer",
   "version": "1.0",
   "description": "Analyzes sentiment of X posts and displays it with a gauge.",
-  "permissions": ["activeTab", "storage"],
+  "permissions": ["activeTab", "storage", "http://localhost:3000/*"],
   "background": {
     "service_worker": "background.js",
     "type": "module"

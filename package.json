@@ -5,9 +5,12 @@
     "build": "webpack"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^13.0.0",
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.11.0",
     "sentiment": "^5.0.2",
-    "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1"
   }
 }

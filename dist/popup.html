@@ -13,6 +13,14 @@
       width: 100%;
       padding: 5px;
       margin: 5px 0;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #357abd;
     }
     #stats {
       font-size: 12px;
@@ -43,13 +51,28 @@
       font-weight: bold;
       text-transform: uppercase;
       margin-top: 5px;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle emphasis */
-      transition: color 0.5s ease; /* Smooth color transition */
-      background: rgba(0, 0, 0, 0.05); padding: 2px 8px; border-radius: 3px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      transition: color 0.5s ease;
     }
     #meter-label {
       font-size: 12px;
       margin-top: 5px;
+    }
+    article[data-testid="tweet"].sentiment-negative::before,
+    article[data-testid="tweet"].sentiment-neutral::before,
+    article[data-testid="tweet"].sentiment-positive::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+      z-index: 0;
+    }
+    article[data-testid="tweet"] * {
+      position: relative;
+      z-index: 1;
     }
   </style>
 </head>

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+#sentiment-gauge {
+  @apply relative w-44 h-22 mx-auto bg-contain bg-no-repeat bg-center;
+  background-image: url('gauge-bg.png');
+}
+
+#needle {
+  @apply absolute w-1 h-28 bg-gray-800 bottom-0 left-1/2 origin-bottom transition-transform duration-500 rounded-t;
+}
+
+#gauge-label {
+  @apply block text-center text-lg font-bold uppercase mt-2 transition-colors duration-500;
+}
